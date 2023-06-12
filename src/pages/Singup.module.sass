@@ -1,0 +1,86 @@
+@import '../styles/var'
+
+.container
+	background-color: $blackColor
+	min-height: 100vh
+	color: $whiteColor
+	padding: 20px
+	font-size: $bodyFontSize
+
+.navbar
+	display: flex
+	flex-direction: row
+	margin-top: 40px
+	margin-bottom: 60px
+
+h2
+	margin: 5px 15px
+	font-size: $titleFontSize
+
+.arrow
+	background: none
+	border: 3px solid $grey1Color
+	border-radius: $borderRadius
+	padding-inline: 2px
+	padding-top: 4px
+	margin-top: 4px
+	color: $whiteColor
+	height: 50px
+	width: 50px
+
+.authSingUp .p
+	text-align: start
+	margin-block: 25px
+
+.authSingUpButton
+	display: flex
+	justify-content: space-between
+	margin-bottom: 45px
+
+.authSingUpButtonView
+	width: 48%
+	background: $grey2Color
+	border: 3px solid $grey1Color
+	border-radius: $borderRadius
+	padding: 20px
+	font-family: $titleFont
+	color: $whiteColor
+
+.inputs
+	display: flex
+	flex-direction: column
+	width: 100%
+
+.input
+	padding: 20px
+	border: 0
+	background: $grey2Color
+	border-radius: $borderRadius
+	border: 3px solid $grey1Color
+	font-size: 15px
+	color: $whiteColor
+.label
+	margin: 10px
+
+.button
+	width: 100%
+	background: $pinkColor
+	color: $whiteColor
+	border: 0px
+	border-radius: $borderRadius
+	padding: 20px
+	font-family: $titleFont
+	margin-top: 30px
+	font-size: $bodyFontSize
+
+.p
+	margin-block: 25px
+	text-align: center
+
+@media (min-width: 420px) //экраны больше 414 имеют свойства ниже
+	.App
+		background-color: $blackColor
+
+	.container
+		max-width: 420px
+		margin: auto
